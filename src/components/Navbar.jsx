@@ -7,7 +7,7 @@ const links = [
   { label: 'Values', href: '#values' },
 ]
 
-export default function Navbar() {
+export default function Navbar({ openQuoteModal }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -23,6 +23,26 @@ export default function Navbar() {
     const el = document.querySelector(href)
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
+  const handleCtaClick = (e) => {
+    e.preventDefault()
+    setMenuOpen(false)
+    if (openQuoteModal) {
+      openQuoteModal({
+        id: 'custom',
+        name: 'Bespoke Bulk Solutions',
+        desc: 'Custom specifications, packaging, or shipping schedules for volume trade buyers.',
+        specs: ['Tailored Grades', 'Flexible Volume', 'Global Logistics'],
+        moq: 'Contact Sales for Details',
+        benefits: [
+          'Fully custom product size sorting and grading',
+          'Flexible trade payment terms (T/T, L/C)',
+          'Complete phytosanitary and export documentation',
+          'Direct logistics routing under FOB/CIF/CFR terms'
+        ]
+      })
     }
   }
 
@@ -53,13 +73,13 @@ export default function Navbar() {
             </li>
           ))}
           <li className="navbar-cta-mobile">
-            <a href="#shop" className="navbar-cta" onClick={(e) => handleClick(e, '#shop')}>
+            <a href="#shop" className="navbar-cta" onClick={handleCtaClick}>
               Get a Quote
             </a>
           </li>
         </ul>
 
-        <a href="#shop" className="navbar-cta navbar-cta-desktop" onClick={(e) => handleClick(e, '#shop')}>
+        <a href="#shop" className="navbar-cta navbar-cta-desktop" onClick={handleCtaClick}>
           Get a Quote
         </a>
       </div>

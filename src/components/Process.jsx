@@ -5,11 +5,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const steps = [
-  { num: '01', title: 'Hand-Selected at Peak', desc: 'Skilled harvesters pick only fully mature coconuts at 11-12 months. Each nut is inspected on the tree before cutting.' },
-  { num: '02', title: 'Graded & Sorted', desc: 'Coconuts are washed, sorted by size (grades 18-25), and checked for defects. Only Grade A nuts proceed.' },
-  { num: '03', title: 'Cold-Chain Packed', desc: 'Within 4 hours of harvest, nuts are packed in ventilated crates. Temperature-controlled staging preserves freshness.' },
-  { num: '04', title: 'Lab Tested', desc: 'Every batch is sampled for moisture content, mold, and residue. Certificates accompany all wholesale orders.' },
-  { num: '05', title: 'Shipped Within 24h', desc: 'Direct from farm to your warehouse. We handle all documentation — phytosanitary, origin, and export paperwork.' },
+  { num: '01', title: 'Hand-Selected Harvest', desc: 'Skilled arborists select only peak-matured nuts (11-12 months) or young drinking nuts (6-7 months) directly on the tree.' },
+  { num: '02', title: 'Classification & Sorting', desc: 'Washed and graded by size (standard export specifications 18-25). Only defect-free Grade A fruit enters our staging.' },
+  { num: '03', title: 'Cold-Chain Preparation', desc: 'Packed in ventilated, high-durability crates within 4 hours of harvest, then moved to our temperature-regulated staging bays.' },
+  { num: '04', title: 'Laboratory Inspection', desc: 'Every batch undergoes rigorous quality-control checks, testing for moisture content, purity, and chemical-free cultivation.' },
+  { num: '05', title: 'Global Trade Dispatch', desc: 'Swift dispatch from estate to port. We manage the entire trade documentation package including origin certificates and phytosanitary permits.' },
 ]
 
 export default function Process({ layout = 'left' }) {
@@ -56,11 +56,11 @@ export default function Process({ layout = 'left' }) {
   return (
     <section ref={sectionRef} className="section" id="process" data-layout={layout}>
       <div className="section-container">
-        <span className="section-label process-label">Our Process</span>
-        <h2 className="section-title process-title">From Tree to Your Warehouse</h2>
+        <span className="section-label process-label">The Supply Chain</span>
+        <h2 className="section-title process-title">From Tree to Port: Meticulously Managed</h2>
         <p className="section-sub process-sub">
-          Every coconut travels a carefully managed path from farm to export,
-          ensuring peak quality when it reaches you.
+          Every coconut travels through a highly optimized, temperature-controlled pipeline
+          ensuring peak freshness and structure upon delivery.
         </p>
         <div className="process-steps">
           {steps.map((step, i) => (

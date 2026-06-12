@@ -7,7 +7,7 @@ import Coconut from './Coconut'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export const scrollState = {
+const scrollState = {
   rotation: 0,
   positionX: 0,
   positionY: 0,

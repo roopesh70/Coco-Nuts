@@ -6,20 +6,20 @@ gsap.registerPlugin(ScrollTrigger)
 
 const cards = [
   {
-    title: 'Our Heritage',
-    text: 'For three generations, our family has cultivated coconuts across 500+ acres of tropical farmland. What began as a small grove is now one of the region\'s most trusted coconut suppliers.',
+    title: 'Generational Heritage',
+    text: 'Cultivating over 500 acres of pristine tropical groves. From a single family plot to a globally trusted B2B import partner.',
   },
   {
-    title: 'Sustainable Farming',
-    text: 'We practice regenerative agriculture — no synthetic pesticides, solar-powered drip irrigation, and intercropping with native species.',
+    title: 'Regenerative Agriculture',
+    text: 'Practicing organic cultivation: zero chemical pesticides, precision solar-powered irrigation, and native intercropping to enrich soil ecology.',
   },
   {
-    title: 'Quality at Scale',
-    text: 'With 50,000+ bearing trees and an annual yield exceeding 2 million nuts, we deliver consistent quality year-round.',
+    title: 'Supply Scale',
+    text: 'Over 50,000 mature, high-yielding trees delivering a consistent volume of 2+ million nuts annually to prevent supply chain disruption.',
   },
   {
-    title: 'Global Standards',
-    text: 'Our farms are GLOBALG.A.P. certified with full traceability from tree to shipment and third-party lab testing on every batch.',
+    title: 'Global Certification',
+    text: 'GLOBALG.A.P. certified operations with end-to-end batch traceability, phytosanitary clearance, and independent laboratory verification.',
   },
 ]
 
@@ -67,11 +67,12 @@ export default function About({ layout = 'left' }) {
   return (
     <section ref={sectionRef} className="section" id="about" data-layout={layout}>
       <div className="section-container">
-        <span className="section-label about-label">About Our Farm</span>
-        <h2 className="section-title about-title">Premium Coconuts,<br />Generations in the Making</h2>
+        <span className="section-label about-label">About Our Estate</span>
+        <h2 className="section-title about-title">Generations of Cultivation,<br />Built on Sustainability</h2>
         <p className="section-sub about-sub">
-          From our family farm to your supply chain — we deliver the finest
-          fresh coconuts with unwavering quality and sustainability.
+          From our family-owned agricultural estate to your global supply chain,
+          we deliver premium-grade tropical coconuts with uncompromising quality control
+          and verified ecological standards.
         </p>
         <div className="about-grid">
           {cards.map((card, i) => (

@@ -5,12 +5,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const values = [
-  { icon: '✓', title: 'Uncompromising Quality', text: 'Every coconut is hand-graded and lab-tested. Our rejection rate is under 0.5% — among the lowest in the industry.' },
-  { icon: '♻️', title: 'Zero-Waste Farm', text: 'Husks become coir, shells become biochar, wastewater is recycled. Nothing goes to waste.' },
-  { icon: '🤝', title: 'Supply Reliability', text: 'Year-round production, monthly capacity of 200,000+ nuts. We honor contracts regardless of market shifts.' },
-  { icon: '🌍', title: 'Carbon-Positive', text: 'We offset 120% of emissions through on-farm solar, reforestation, and mangrove conservation.' },
-  { icon: '🔬', title: 'Full Traceability', text: 'Batch-level tracking from harvest to delivery. QR-code enabled for every pallet shipped.' },
-  { icon: '📋', title: 'Hassle-Free Docs', text: 'We handle all export documentation — phytosanitary, health certs, origin, and bill of lading.' },
+  { icon: '✓', title: 'Guaranteed Consistency', text: 'With a crop rejection rate under 0.5%, we guarantee consistent size, shape, and maturity in every batch.' },
+  { icon: '♻️', title: 'Circular Zero-Waste', text: 'Operating a zero-waste plantation: husks become bio-coir, shells become active carbon, and water is reclaimed for farm use.' },
+  { icon: '🤝', title: 'Reliability of Supply', text: 'Year-round production cycles and 200,000+ monthly nut capacity. We honor contract pricing despite market shifts.' },
+  { icon: '🌍', title: 'Carbon-Positive Farm', text: 'We offset 120% of operations through solar transition, native forestation, and coastal mangrove planting.' },
+  { icon: '🔬', title: 'Granular Traceability', text: 'Pallet-level digital tracking. Scan the QR code on delivery to see harvest dates and block origins.' },
+  { icon: '📋', title: 'Comprehensive Customs', text: 'All trade documents managed in-house—phytosanitary certificates, health filings, and bill of lading releases.' },
 ]
 
 export default function Values({ layout = 'right' }) {
@@ -57,11 +57,10 @@ export default function Values({ layout = 'right' }) {
   return (
     <section ref={sectionRef} className="section" id="values" data-layout={layout}>
       <div className="section-container">
-        <span className="section-label values-label">Why Buy From Us</span>
-        <h2 className="section-title values-title">Trusted by Buyers Worldwide</h2>
+        <span className="section-label values-label">The Coco Nuts Advantage</span>
+        <h2 className="section-title values-title">The Import Partner of Choice</h2>
         <p className="section-sub values-sub">
-          When you partner with us, you get more than coconuts — you get
-          consistency, transparency, and a team that delivers.
+          We go beyond supplying raw ingredients. We establish stable, transparent, and high-performance supply partnerships.
         </p>
         <div className="values-grid">
           {values.map((v, i) => (
