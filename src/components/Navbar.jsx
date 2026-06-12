@@ -50,8 +50,7 @@ export default function Navbar({ openQuoteModal }) {
     <nav className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="navbar-inner">
         <a href="#" className="navbar-logo" onClick={(e) => handleClick(e, '#top')}>
-          <span className="navbar-logo-icon">🥥</span>
-          <span className="navbar-logo-text">Coco Nuts</span>
+          <span className="navbar-logo-text">COCO NUTS</span>
         </a>
 
         <button
